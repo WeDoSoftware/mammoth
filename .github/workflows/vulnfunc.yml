@@ -9,5 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: debricked/actions/scan@v1
-      env: DEBRICKED_API_URI: ${{ secrets.DEBRICKED_STAGING_URI }}
+      env: 
+        DEBRICKED_API_URI: ${{ secrets.DEBRICKED_STAGING_URI }}
         DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
